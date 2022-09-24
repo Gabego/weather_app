@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('../public/fondo-21d.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 48px 30px 110px 20px 20px 20px;
+    gap: 10px;
+    margin: 50px auto;
+    width: 300px;
+    height: 400px;
+    color: white;
+    /* background: #0b2a33; */
+    background-image: url('../public/Fondo-clima.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.card__title {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.card_name {
+    font-size: 1.5em;
+}
+
+.img__weather {
+    width: 120px;
+    height: 100px;
+    
+}
+
+.card__button {
+    padding: 6px 20px;
+    font-size: 1em;
+}
+.card__button:hover {
+    font-size: 1.1em;
+    background: lightslategrey;
+    color: white;
+    border: none;
+}
+
+.loading {
+    color: black;
+    font-size: 2em;
+    margin-top: 10px;
+}
