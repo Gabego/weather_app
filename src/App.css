@@ -15,8 +15,8 @@ body {
 .card {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 48px 30px 110px 20px 20px 20px;
-    gap: 10px;
+    grid-template-rows: 40px 35px 90px 40px 20px 20px 30px 20px 20px;
+    gap: 8px;
     margin: 50px auto;
     width: 300px;
     height: 400px;
@@ -26,6 +26,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    border-radius: 8px;
 }
 
 .card__title {
@@ -43,9 +44,28 @@ body {
     
 }
 
+
+.card__description {
+    color: aqua;
+    font-size: 1.1em;
+}
+
+.card__data {
+    color: aqua;
+    font-size: 0.9em;
+}
+
+.card__temp{
+    color: aqua;
+    font-size: 1.3em; 
+    font-weight: bold;
+}
+
 .card__button {
     padding: 6px 20px;
     font-size: 1em;
+    border-radius: 6px;
+    border: none;
 }
 .card__button:hover {
     font-size: 1.1em;
