@@ -18,8 +18,9 @@ const WeatherCard = ({ weather }) => {
       <div className='card_name'>{`${weather?.name}, ${weather?.sys.country}`}</div>
 
       <div>
+        <img className='img__weather' src={`./${weather?.weather[0].icon}.png`} alt="" />
         {/* <img className='img__weather' src={weather && `../public/${weather?.weather[0].icon}.png`} alt="" /> */}
-        <img className='img__weather' src={weather && `https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />
+        {/* <img className='img__weather' src={weather && `https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" /> */}
       </div>
       <div><span className='card__description'>{weather?.weather[0].description}</span></div>
 
