@@ -6,7 +6,7 @@
 body {
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url('../public/fondo-21d.jpg');
+    /* background-image: url('./fondo-21d.jpg');*/
 
     text-align: center;
 
@@ -15,9 +15,30 @@ body {
   background-attachment: fixed;
   background-size: cover;
 min-height: 100vh;
-  width: 100%;
+  width: 100%; 
 }
 
+.app {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card {
     display: grid;
     grid-template-columns: 100%;
@@ -27,8 +48,7 @@ min-height: 100vh;
     width: 300px;
     height: 400px;
     color: white;
-    /* background: #0b2a33; */
-    background-image: url('../public/Fondo-clima.jpg');
+    background-image: linear-gradient(to top, #02304b, #031724);
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -46,7 +66,7 @@ min-height: 100vh;
 
 .img__weather {
     width: 120px;
-    height: 100px;
+    height: 90px;
     
 }
 
@@ -84,4 +104,9 @@ min-height: 100vh;
     color: black;
     font-size: 2em;
     margin-top: 10px;
+}
+
+.loading__img {
+    width: 400px;
+    height: 200px;
 }

@@ -4,6 +4,7 @@ import './App.css'
 import axios from 'axios'
 import WeatherCard from './componets/WeatherCard'
 import Loading from './componets/Loading'
+import video_fondo from '/video_fondo.mp4'
 
 
 function App() {
@@ -41,14 +42,24 @@ function App() {
 
 
   return (
-    <div className="App">
-      {
-      weather?
-      <WeatherCard weather={weather} />
-      :
-      <Loading />
-      } 
-    </div>
+
+      <div className='app'>
+        <video src={video_fondo} autoPlay loop muted/>
+        <div className='content'>
+          {
+          weather ?
+            <WeatherCard weather={weather} />
+            :
+            <Loading />
+        }
+        </div>
+      </div>
+
+
+
+
+
+
   )
 }
 
